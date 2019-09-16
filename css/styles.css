@@ -1,0 +1,262 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nova Square', cursive;
+    font-size: 16px;
+}
+.small-text{
+    font-size: 12px;
+}
+.fill-screen{
+    width: 100%;
+    padding-top: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.title-row{
+    position: relative;
+}
+.title{
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.first-name{
+    margin-top: 150px;
+    color:rgb(255, 255, 251);
+    font-size: 300%;
+}
+.last-name{
+    color:#FF9900;
+    font-weight: 900;
+    background-color: white;
+    padding: 0px,10px;
+}
+.para{
+    float: right;
+    font-size: 19px;
+    margin-right: 35px;
+}
+.sec-header{
+    text-align:center;
+    margin-top: 1em;
+}
+.table-custom{
+    font-size: 80%;
+    text-align: center;
+}
+
+.table-custom dt{
+    float: left;
+    font-weight: bold;
+}
+
+.table-custom dd{
+    margin-left: 10em;
+}
+.social a{
+display:inline-block;
+width: 30px;
+height: 30px;
+margin: 5px;
+text-align: center;
+border: 2px solid black;
+}
+
+.fixed-attachment{
+    background-attachment: fixed;
+}
+.activity-elements{
+    text-align: center;
+}
+.card h4{
+   
+    color: #fff;
+}
+.card-container{
+    margin-top: 1em;
+    perspective: 700px;
+    -webkit-perspective: 700px;
+}
+.card{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 250px;
+    margin: 2em;
+    width: 300px;
+    height: 300px;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.front{
+    background: #2196f3;
+}
+.back{
+    background: #b1c4d1;
+    transform: rotateY(180deg);
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.skill-progress{
+   
+    float: right;
+}
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 10px;
+}
+.progress-outer{
+    background:skyblue;
+    padding: 5px 60px 5px 5px;
+    border: 5px solid skyblue;
+    border-radius: 45px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 18em;
+}
+.progress{
+    background:white;
+    border-radius: 20px;
+    width: 22em;
+    height: 2em;
+}
+.progress .progress-bar{
+    border-radius: 20px;
+    box-shadow: none;
+    animation: animate-positive 2s;
+}
+.progress .progress-value{
+    font-size: 20px;
+    font-weight: 700;
+    color: gray;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+.skill-level{
+    font-size: 100%;
+    color: chocolate;
+    padding-right: 2%;
+}
+
+.skill-cards{
+    margin-top: 10px;
+}
+
+.skill-tech{
+    padding: 20px;
+}
+
+.nav-link{
+-webkit-text-fill-color:#696969;
+}  
+  a:visited {
+    background-color:#B0C4DE;
+  }
+  a:active {
+    background-color:skyblue;
+  } 
+a{
+    text-decoration-color: none;
+}
+.box{
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24),0 0 4px 0 rgba(0,0,0,0.14);
+    box-sizing: border-box;
+    max-width: 420px;
+    padding: 30px;
+    margin: 20px;
+}
+.box-slim{
+    padding: 40px;
+    max-width: 400px;
+}
+.my-projects{
+margin-bottom: 30px;
+}
+.Portfolio-section{
+    margin-bottom: 50px;
+}
+/*
+For mobile hidden feature
+@media(max-width:788px){
+    .fixed-attachment{
+        background-attachment: scroll;
+    }
+}
+.sec-header>h3{
+    border-top: 1px solid lightgray;
+    padding-top: 15px;
+}*/
+h3>span ,.nav a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+h3>span:hover,nav a:hover{
+    color: #000;
+}
+h3>span:before,.nav a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; 
+}
+h3>span:hover:before,.nav a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.down-button{
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    text-align: center;
+}
+.down-icon a{
+font-size: 300%;
+color: #2196f3;
+text-decoration: none;
+}
+.logo{
+    padding: 5px 5px 15px;
+    margin-top: 10px;
+}
+.logo>a:hover{
+    text-decoration: none;
+}
+.brand-logo{
+    border: 1px solid rgb(64, 156, 255);
+    border-radius: 50%;
+    padding: 15px;
+    color:rgb(64, 156, 255);
+    background-color: white;
+    font-weight: 900%;
+}
